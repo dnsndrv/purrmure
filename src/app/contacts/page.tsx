@@ -1,5 +1,5 @@
 import { Star } from "@/components/decorations/star";
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 export const metadata = { title: "Контакты — PURRMURE" };
 
@@ -17,13 +17,6 @@ const contacts = [
     value: "hello@purrmure.test",
     href: "mailto:hello@purrmure.test",
     description: "Для коллабораций и оптовых заказов",
-  },
-  {
-    icon: MapPin,
-    label: "Мастерская",
-    value: "По записи",
-    href: null,
-    description: "Мама + я + швейная машинка",
   },
 ];
 
@@ -99,7 +92,6 @@ export default function ContactsPage() {
         <p className="text-white/85 text-[15px] md:text-lg max-w-2xl leading-relaxed">
           Если интересно понаблюдать, как я пытаюсь сделать нас с мамой
           богатыми и успешными леди — лучше всего написать в Telegram.
-          Серьёзно, это самый быстрый способ быть в курсе.
         </p>
       </div>
     </div>
