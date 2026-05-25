@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Star } from "@/components/decorations/star";
+import { asset } from "@/lib/utils";
 
 export function Hero() {
   return (
@@ -10,7 +11,7 @@ export function Hero() {
         {/* Background photo of the bag */}
         <div className="absolute inset-0">
           <Image
-            src="/hero-bag.png"
+            src={asset("/hero-bag.png")}
             alt=""
             fill
             priority
